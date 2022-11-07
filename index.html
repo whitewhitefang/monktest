@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,700;1,300;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Monktest</title>
+  </head>
+  <body>
+    <div class="preferences">
+      <div class="preferences__container">
+        <header class="preferences__header">
+          <h1 class="preferences__title">Preferences</h1>
+          <p class="preferences__subtitle">
+            On this page you can configure the main system parameters available
+            for customization
+          </p>
+        </header>
+
+        <main>
+          <div class="form">
+            <form
+              class="form__body"
+              name="preferences"
+              id="preferences"
+              action=""
+            >
+              <div class="form__input-group">
+                <label for="companyTitle">Company Title</label>
+                <input
+                  type="text"
+                  class="form__input-group--text"
+                  id="companyTitle"
+                  name="companyTitle"
+                />
+              </div>
+              <div class="form__input-group">
+                <label for="firstDay">First Day</label>
+                <select
+                  id="firstDay"
+                  class="form__input-group--select"
+                  name="firstDay"
+                >
+                  <option>Monday</option>
+                  <option>Sunday</option>
+                  <option>System</option>
+                </select>
+              </div>
+              <div class="form__input-group">
+                <label for="containerWidth">Container Width</label>
+                <select
+                  id="containerWidth"
+                  class="form__input-group--select"
+                  name="containerWidth"
+                >
+                  <option>Fixed</option>
+                  <option>Fluid</option>
+                  <option>Optional</option>
+                </select>
+              </div>
+              <div class="form__input-group">
+                <label for="homepage">Homepage</label>
+                <select
+                  id="homepage"
+                  class="form__input-group--select"
+                  name="homepage"
+                >
+                  <option>Starred Projects</option>
+                  <option>All Projects</option>
+                  <option>Optional</option>
+                </select>
+              </div>
+              <div class="form__input-group">
+                <label for="indentSize">Indent Size</label>
+                <input
+                  type="text"
+                  id="indentSize"
+                  class="form__input-group--text"
+                  name="indentSize"
+                  placeholder="Default"
+                />
+              </div>
+              <div class="form__input-group">
+                <label for="code">Personal Code</label>
+                <div id="code">
+                  <div class="form__input-group--group-multytex">
+                    <input
+                      class="form__input-group--multytext"
+                      type="text"
+                      name="code-1"
+                      id="code-1"
+                      maxlength="4"
+                      size="4"
+                    />
+                    -
+                    <input
+                      class="form__input-group--multytext"
+                      type="text"
+                      name="code-2"
+                      id="code-2"
+                      maxlength="4"
+                      size="4"
+                    />
+                    -
+                    <input
+                      class="form__input-group--multytext"
+                      type="text"
+                      name="code-3"
+                      id="code-3"
+                      maxlength="4"
+                      size="4"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form__input-group">
+                <div></div>
+                <p class="form__multytext-subtitle">12 digits</p>
+              </div>
+              <div class="form__input-group form__input-group--radio">
+                <legend>Theme</legend>
+                <div class="input-group">
+                  <div class="radio__button">
+                    <input
+                      type="radio"
+                      id="themeLight"
+                      name="theme"
+                      defaultValue="light"
+                      value="light"
+                      checked="true"
+                    />
+                    <label for="themeLight">Light</label>
+                  </div>
+                  <div class="radio__button">
+                    <input
+                      type="radio"
+                      id="themeDark"
+                      name="theme"
+                      defaultValue="dark"
+                      value="dark"
+                    />
+                    <label for="themeDark">Dark</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form__actions">
+                <button class="form__actions--submut" type="submit">
+                  Apply and Save
+                </button>
+                <button class="form__actions--cancel" type="button">
+                  Cancel
+                </button>
+              </div>
+            </form>
+          </div>
+        </main>
+      </div>
+      <footer class="footer">
+        <p class="footer__output">
+          2020-2022
+          <a href="#" class="footer__link">Terms of Service</a>
+          and
+          <a href="#" class="footer__link">Conditions</a>
+        </p>
+      </footer>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
